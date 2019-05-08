@@ -33,7 +33,7 @@ class SplashScreen:
         giiata_logo = pygame.image.load('./images/Logo-GIIATa.png')
         giiata_logo = pygame.transform.scale(giiata_logo, (180,160))
         
-        robot = pygame.image.load('./images/Blue-Robot.png')
+        robot = pygame.image.load('./images/download.png')
         robot = pygame.transform.scale(robot, (128, 128))
         
         screen = pygame.display.set_mode((width, height))
@@ -74,12 +74,12 @@ class SplashScreen:
             screen.blit(giiata_logo,(10,10))
             
             #for i in range(len(points)):
-                #screen.fill((255,255,255))
+            #screen.fill((255,255,255))
             screen.fill((255,255,255),rectc)
-            x = int(points[i])*10
-            fxt = int(fx_points[i]*20.0)
+            x = int(points[i])*7.5
+            fxt = int(fx_points[i]*0.0)
             #screen.set_at((x, int(y - int(fx_points[i]))), (203,0,0))
-            pygame.draw.circle(screen, (10,10,223),  (x, y - fxt), 3)
+            #pygame.draw.circle(screen, (10,10,223),  (x, y - fxt), 3)
             #print((x, y - fxt))
             screen.blit(robot, (x,y - fxt))
             
